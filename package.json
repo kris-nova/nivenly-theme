@@ -58,5 +58,8 @@
     "hooks": {
       "pre-push": "yarn build && git add . && git commit --amend --no-edit"
     }
+  },
+  "dependencies": {
+    "yarn": "^1.22.10"
   }
 }
