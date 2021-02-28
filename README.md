@@ -131,7 +131,7 @@ theme = "hello-friend"
 paginate = 5
 
 [params]
-  # dir name of your blog content (default is `content/posts`).
+  # dir name of your blog content (default is `content/lib`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
 
@@ -141,11 +141,11 @@ paginate = 5
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
 
-  # Show reading time in minutes for posts
+  # Show reading time in minutes for lib
   showReadingTime = false
 
-  # Show table of contents at the top of your posts (defaults to false)
-  # Alternatively, add this param to src front matter for specific posts
+  # Show table of contents at the top of your lib (defaults to false)
+  # Alternatively, add this param to lib front matter for specific lib
   # toc = true
 
   # Show full page content in RSS feed items

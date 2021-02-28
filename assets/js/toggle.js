@@ -19,22 +19,42 @@ themeToggle.addEventListener("click", () => {
 
 
 
-// Toggle sidebar
+// Toggle sidebar left
 
-const getSidebar = window.localStorage && window.localStorage.getItem("toggle");
-const sidebarToggle = document.querySelector(".sidebar-toggle");
-const toggle = document.getElementById('magicSidebar');
-const isSidebar = getSidebar === "true";
+const getSidebarL = window.localStorage && window.localStorage.getItem("toggleL");
+const sidebarToggleL = document.querySelector(".sidebar-toggle-right");
+const toggleL = document.getElementById('magicSidebarLeft');
+const isSidebarL = getSidebarL === "true";
 
-if (getSidebar !== null) {
-  toggle.classList.toggle("hidden", isSidebar);
+if (getSidebarL !== null) {
+  toggleL.classList.toggle("hidden", isSidebarL);
 }
 
-sidebarToggle.addEventListener("click", () => {
-  toggle.classList.toggle("hidden");
+sidebarToggleL.addEventListener("click", () => {
+  toggleL.classList.toggle("hidden");
   window.localStorage &&
     window.localStorage.setItem(
-      "toggle",
-      toggle.classList.contains("hidden") ? "true" : "false",
+      "toggleL",
+      toggleL.classList.contains("hidden") ? "true" : "false",
     );
+});
+
+// Toggle sidebar right
+
+const getSidebarR = window.localStorage && window.localStorage.getItem("toggleR");
+const sidebarToggleR = document.querySelector(".sidebar-toggle-right");
+const toggleR = document.getElementById('magicSidebarRight');
+const isSidebarR = getSidebarR === "true";
+
+if (getSidebarR !== null) {
+  toggleR.classList.toggle("hidden", isSidebarR);
+}
+
+sidebarToggleR.addEventListener("click", () => {
+  toggleR.classList.toggle("hidden");
+  window.localStorage &&
+  window.localStorage.setItem(
+      "toggleR",
+      toggleR.classList.contains("hidden") ? "true" : "false",
+  );
 });
